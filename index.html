@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam Ouhadj — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio d'Adam Ouhadj, étudiant en BUT Informatique à l'IUT de Montreuil. Objectif : cybersécurité / pentesting."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Écran de chargement façon terminal -->
+    <div id="splash">
+      <div class="splash-inner">
+        <span class="prompt">adam@iut-montreuil:~$</span>
+        <span class="typed" id="typed-cmd"></span><span class="caret">█</span>
+      </div>
+    </div>
+
+    <!-- En-tête / navigation -->
+    <header id="topbar">
+      <a href="#accueil" class="brand"
+        ><span class="brand-bracket">&lt;</span>AO<span class="brand-bracket"
+          >/&gt;</span
+        ></a
+      >
+      <nav class="navigation" id="nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="accueil" class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+          <p class="eyebrow">// étudiant BUT Informatique — IUT de Montreuil</p>
+          <h1>Adam <span class="accent">Ouhadj</span></h1>
+          <p class="hero-sub">
+            Je conçois, je code, et je m'oriente vers la
+            <span class="hl">cybersécurité &amp; le pentesting</span>.
+          </p>
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-ghost">Me contacter</a>
+          </div>
+          <ul class="hero-stack" aria-label="Technologies">
+            <li>Java</li>
+            <li>C</li>
+            <li>SQL</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Réseau</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- À PROPOS -->
+      <section id="apropos" class="section">
+        <div class="section-head">
+          <span class="section-num">01</span>
+          <h2>À propos</h2>
+        </div>
+        <div class="apropos-grid">
+          <div class="apropos-text">
+            <p>
+              Étudiant en première année de BUT Informatique à l'IUT de
+              Montreuil (Université Paris 8). J'apprends le développement à
+              travers mes projets et je me forme en autodidacte à la
+              cybersécurité, avec pour objectif un parcours vers le pentesting.
+            </p>
+            <p>
+              J'aime le code direct et utile, comprendre comment les choses
+              fonctionnent en profondeur, et travailler sur des projets concrets
+              — du développement d'applications aux réseaux.
+            </p>
+            <a
+              href="./Ressources/CV-Adam-Ouhadj.pdf"
+              class="btn btn-ghost cv-btn"
+              target="_blank"
+              rel="noopener"
+              >Voir mon CV</a
+            >
+          </div>
+          <ul class="apropos-facts">
+            <li><span>Nom</span> Adam Ouhadj</li>
+            <li><span>Ville</span> Bobigny (93)</li>
+            <li><span>Formation</span> BUT Informatique</li>
+            <li><span>Établissement</span> IUT de Montreuil</li>
+            <li><span>Objectif</span> Cybersécurité / Pentesting</li>
+            <li><span>Email</span> ouhadjadam@gmail.com</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- COMPÉTENCES -->
+      <section id="competences" class="section">
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h2>Compétences</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Développement</h3>
+            <ul>
+              <li>
+                <span class="skill-name"
+                  ><i class="devicon-java-plain colored"></i> Java</span
+                >
+                <span class="lvl" data-lvl="70"></span>
+              </li>
+              <li>
+                <span class="skill-name"
+                  ><i class="devicon-c-plain colored"></i> C</span
+                >
+                <span class="lvl" data-lvl="55"></span>
+              </li>
+              <li>
+                <span class="skill-name"
+                  ><i class="devicon-javascript-plain colored"></i>
+                  JavaScript</span
+                >
+                <span class="lvl" data-lvl="50"></span>
+              </li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Web</h3>
+            <ul>
+              <li>
+                <span class="skill-name"
+                  ><i class="devicon-html5-plain colored"></i> HTML</span
+                >
+                <span class="lvl" data-lvl="80"></span>
+              </li>
+              <li>
+                <span class="skill-name"
+                  ><i class="devicon-css3-plain colored"></i> CSS</span
+                >
+                <span class="lvl" data-lvl="75"></span>
+              </li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Données &amp; Systèmes</h3>
+            <ul>
+              <li>
+                <span class="skill-name"
+                  ><i class="devicon-postgresql-plain colored"></i> SQL</span
+                >
+                <span class="lvl" data-lvl="65"></span>
+              </li>
+              <li>
+                <span class="skill-name"
+                  ><i class="devicon-linux-plain colored"></i> Réseau</span
+                >
+                <span class="lvl" data-lvl="60"></span>
+              </li>
+            </ul>
+          </article>
+        </div>
+        <p class="skills-note">
+          Compétences du référentiel BUT mobilisées :
+          <strong>Réaliser</strong>, <strong>Conduire</strong>,
+          <strong>Collaborer</strong>.
+        </p>
+      </section>
+
+      <!-- PROJETS -->
+      <section id="projets" class="section">
+        <div class="section-head">
+          <span class="section-num">03</span>
+          <h2>Projets</h2>
+        </div>
+
+        <!-- Projet vedette : celui de l'oral -->
+        <article class="project-feature" id="blind-frontiere">
+          <div class="project-feature-tag">Projet présenté à l'oral</div>
+          <div class="project-feature-body">
+            <h3>Blind Frontière — site web pour un porteur de projet</h3>
+            <p class="project-meta">
+              SAE 05-06 · Partenariat I-Engage · Travail d'équipe · HTML / CSS
+            </p>
+            <p>
+              Dans le cadre d'un partenariat avec l'incubateur I-Engage, mon
+              équipe a répondu au besoin d'un porteur de projet : disposer d'un
+              site web pour présenter et lancer son jeu,
+              <em>Blind Frontière</em>. Nous avons recueilli et reformulé son
+              besoin, conçu les maquettes et l'arborescence, puis développé le
+              site en HTML/CSS.
+            </p>
+            <ul class="project-competences">
+              <li>
+                <strong>Conduire</strong> — identifier et reformuler les besoins
+                du client
+              </li>
+              <li>
+                <strong>Collaborer</strong> — travailler en équipe, gestion de
+                projet via Trello
+              </li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="btn btn-primary" id="lien-site"
+                >Voir le site réalisé</a
+              >
+            </div>
+            <p class="project-todo">
+              ⚙︎ À compléter : remplace le lien ci-dessus par l'URL du site, et
+              ajoute le nom du porteur + ton rôle précis.
+            </p>
+          </div>
+        </article>
+
+        <!-- Autres projets : à compléter plus tard -->
+        <div class="projects-grid">
+          <article class="project-card placeholder">
+            <h3>Projet à venir</h3>
+            <p>Décris ici un projet du collège / personnel.</p>
+            <span class="card-edit">à compléter</span>
+          </article>
+          <article class="project-card placeholder">
+            <h3>Projet à venir</h3>
+            <p>Décris ici un autre projet (perso, scolaire…).</p>
+            <span class="card-edit">à compléter</span>
+          </article>
+          <article class="project-card placeholder">
+            <h3>Projet à venir</h3>
+            <p>Décris ici un autre projet.</p>
+            <span class="card-edit">à compléter</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="section-head">
+          <span class="section-num">04</span>
+          <h2>Contact</h2>
+        </div>
+        <div class="contact-box">
+          <p class="contact-prompt">
+            <span class="prompt">adam@iut-montreuil:~$</span> echo $CONTACT
+          </p>
+          <a class="contact-mail" href="mailto:ouhadjadam@gmail.com"
+            >ouhadjadam@gmail.com</a
+          >
+          <p class="contact-sub">
+            Disponible pour un stage, un projet, ou pour échanger.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Adam Ouhadj — Portfolio BUT Informatique</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
